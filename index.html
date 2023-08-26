@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlashFlavor</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/3ec0412827.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+    <!-- Header Section -->
     <header>
         <!-- <i class="fa-solid fa-utensils"></i> -->
         <!-- <i class="fa-solid fa-pizza-slice"></i> -->
@@ -34,12 +36,59 @@
         </div>
     </header>
 
+    <!-- Search bar -->
     <from id="search-form">
         <input type="search" placeholder="Search here.." name="" id="search-box">
         <label for="search-box" class="fa fa-search"></label>
         <i class="fas fa-times" id="close"></i>
     </from>
 
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="swiper-container home-slider ">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our special dish</span>
+                        <h3>spicy noodles</h3>
+                        <p>Indulge in a symphony of flavors with our fiery and aromatic spicy noodles, a culinary adventure that ignites the senses.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="resources/noodles.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our special dish</span>
+                        <h3>fried rice</h3>
+                        <p>Deliciously wok-tossed rice infused with vibrant flavors and an array of fresh ingredients.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="resources/friedRice.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our special dish</span>
+                        <h3>Manchurian</h3>
+                        <p>Delight in our savory Manchurian: perfectly crafted fusion bites with a harmonious blend of flavors and textures.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="resources/manchurian1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
